@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/LINKER_favicon.png" type="image/png">
+    <link rel="stylesheet" href="style-painel.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <title>Painel - Linker Digital</title>
+</head>
+<body onload="horario()">
+
+    <header>
+        <img src="imagens/linker_grey.png" alt="Logo">
+        <nav>
+            <a class="notify" href="painel_notify.html"><i class="fas fa-bell"></i></a>
+            <a class="conta" href="painel_conta.html"><i class="fas fa-user-circle"></i></a>
+            <a class="exit" href="login.html"><i class="fas fa-sign-out-alt"></i></a>
+        </nav>
+    </header>
+
+    <div class="painel-funcoes">
+            <ul>
+                <li>| <a href="painel.html">Início</a> |</li>
+                <li><a href="painel_sites.html">Sites</a> |</li>
+                <li><a href="#">Leads</a> |</li>
+                <li><a href="#">Gráficos</a> |</li>
+                <li><a href="painel_training.html">Treinamentos</a> |</li>
+                <li><a href="painel_notify.html">Notificações</a> |</li>
+                <li><a href="painel_conta.html">Minha conta</a> |</li>
+            </ul>
+    </div>
+
+    <div class="painel-sites">
+        <h1 id="titulo">Seus sites</h1>
+        <div class="seus-sites">
+            <h2>Sites cadastrados</h2>
+            <div class="lista-sites">
+                <p> <i class="fab fa-wordpress"></i> <a href="http://gabrielobwebdevelopment.epizy.com/" target="_blank">gabrielobwebdevelopment.epizy.com</a></p>
+                <p> <i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <a href="https://gabrielwd.000webhostapp.com" target="_blank">gabrielwd.000webhostapp.com</a></p>
+                <p> <i class="fab fa-github"></i> <a href="https://gustavoguanabara.github.io" target="_blank">gustavoguanabara.github.io</a></p>
+
+                <br>
+
+                <h3>Integre um novo site:</h3>
+                <input type="url" name="adicionar_site" id="adicionar_site" placeholder="Digite a URL do site">
+
+                <h2>Tipo do site</h2>
+
+                <input type="radio" name="tipo_do_site" id="tipo_do_site">
+                <label>WordPress</label>
+                
+                <input type="radio" name="tipo_do_site" id="tipo_do_site">
+                <label>Wix</label>
+                
+                <input type="radio" name="tipo_do_site" id="tipo_do_site">
+                <label>Google Sites</label>
+                
+                <input type="radio" name="tipo_do_site" id="tipo_do_site">
+                <label>HTML, CSS</label>
+
+                <br>
+                
+                <input type="button" value="Integrar">
+            </div>
+            <div class="novo">
+                <h2>Crie um novo site!</h2>
+
+                <input type="url" name="adicionar_site" id="url" placeholder="nomedosite.linkerdigital.com">
+
+                <h2>Tipo do site</h2>
+
+                <input type="radio" name="tipo_do_site" id="tipo_do_site">
+                <label>WordPress</label>
+
+                <br>
+
+                <input type="button" value="Criar um novo site!" onclick="criarSite()">
+            </div>
+        </div>
+    </div>
+
+        <script>
+            function horario() {
+            var data = new Date()
+            var hora = data.getHours()
+            var titulo = document.getElementById('titulo')
+    
+            console.log(hora)
+            
+            if (hora < 12) {
+                document.body.style.backgroundColor = '#f8bc87'
+                titulo.style.color = 'white'            
+            } else if (hora < 18){
+                document.body.style.backgroundColor = '#afd0f0'
+                titulo.style.color = 'black'
+            } else {
+                document.body.style.backgroundColor = '#021d3b'
+                titulo.style.color = 'white'
+            }
+        }
+        </script>    
+</body>
+</html>

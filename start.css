@@ -1,0 +1,210 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "Noto Sans", Arial, sans-serif;
+}
+
+nav {
+    display: inline;
+    margin-right: 80px;
+    float: right;
+    margin-top: 50px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+img.logo {
+    margin: 20px;
+}
+ 
+.barra-links {
+    padding: 5px;
+    text-decoration: none;
+    display: inline;
+    cursor: pointer;
+}
+
+.barra-links > a {
+    text-decoration: none;
+    color: #546CB7;
+    text-transform: uppercase;
+    transition: 0.5s all ease-out;
+}
+
+.barra-links > a:hover {
+    color: black;
+    text-transform: uppercase;
+    transition: 0.5s all ease-out;
+}
+
+.login {
+    margin: 5px;
+    background-color: #546CB7;
+    color: white;
+    display: inline;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.5s all ease-out;
+    cursor: pointer;
+}
+
+.login > a {
+    color: white;
+    text-decoration: none;
+}
+
+.login:hover {
+    background-color: black;
+}
+
+div#inicio {
+    padding: 10% 0px;
+    background-image: url(imagens/aurora.jpg);
+    background-attachment: fixed;
+    background-repeat: repeat-x;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+div#inicio h1 {
+    font-weight: normal;
+    font-size: 4em;
+    margin: 10px;
+}
+
+div#inicio h2 {
+    font-weight: normal;
+    font-size: 2em;
+    margin: 10px;
+}
+
+div#inicio h3 {
+    font-weight: normal;
+    font-size: 2em;
+    margin: 10px;
+}
+
+div#seccadastro {
+    padding: 80px 0px;
+    background-color: #d9d9d9;
+    color: black;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    grid-gap: 20px;
+}
+
+.form, .incluso, .share {
+    background-color: #6B8AC7;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.form {
+    text-align: justify;
+}
+
+.form h2 {
+    margin: 10px;
+    font-weight: normal;
+}
+
+form input#nome {
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    height: 15px;
+    font-size: 16px; 
+    font-family: "Noto Sans", Arial, sans-serif;
+}
+
+form input#email {
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    height: 15px;
+    font-size: 16px; 
+    font-family: "Noto Sans", Arial, sans-serif;
+}
+
+form input#projeto {
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    height: 15px;
+    font-size: 16px; 
+    font-family: "Noto Sans", Arial, sans-serif;
+}
+
+form input#check {
+    margin: 10px;
+}
+
+.btn-submit {
+    margin: 10px;
+    padding: 10px;
+    font-family: "Noto Sans", Arial, sans-serif;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.incluso h2 {
+    font-weight: normal;
+}
+
+.incluso ul {
+    list-style: none;
+}
+
+.incluso li {
+    text-align: center;
+    margin: 10px 0px;
+}
+
+footer {
+    background-color: #6B8AC7;
+    color: white;
+    padding: 80px 0px;
+}
+
+
+.secfooter2 h2 {
+    font-weight: normal;
+    margin: 10px 0px;
+}
+
+.secfooter2 ul {
+    list-style: none;
+}
+
+.secfooter2 li {
+    margin: 5px 0px;
+    text-transform: uppercase;
+}
+
+.secfooter2 li a {
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: white;
+}
+
+.secfooter3 p {
+    margin: 10px 0px;
+}

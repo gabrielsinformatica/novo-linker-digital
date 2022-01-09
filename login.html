@@ -21,8 +21,7 @@
         }
 
         h1 {
-            margin-top: 7.5%;
-            margin-bottom: 20px;
+            margin: 30px 0px;
             color: white;
             font-weight: normal;
             text-transform: uppercase;
@@ -32,19 +31,40 @@
             margin: 20px;
         }
 
+        .container {
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            top: 0; 
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0px;
+        }
+
         .wrapper {
-            margin: 10px 350px;
-            padding: 20px;
             background-color: white;
-            color: black;
-            box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.253);
-            border-radius: 10px;
+            padding: 40px;
+            border: 10px solid #6B8AC7;
+            box-shadow: 0 0 0 10px white;
+            position: relative;
+            min-width: 300px;
         }
 
         .wrapper > a {
             margin: 10px 0px;
             color: black;
             text-decoration: underline;
+        }
+
+        input#userName {
+            padding: 10px;
+            margin: 10px;
+            width: 300px;
+            height: 15px;
+            font-size: 16px; 
+            font-family: "Noto Sans", Arial, sans-serif;
         }
 
         input#email {
@@ -78,67 +98,9 @@
         }
 
         .sera {
-            margin: 5px 0px;
-        }
-
-        @media screen and (max-width: 768px) {
-            .wrapper {
-                margin: 10px;
-                padding: 10px;
-            }
-
-            .wrapper > a {
-                margin: 10px 0px;
-                color: black;
-                text-decoration: underline;
-            }
-
-            input#email {
-                width: 250px;
-            }
-
-            input#senha {
-                width: 250px;
-            }
-
-            .btn-submit {
-                padding: 10px 110px;
-                border-radius: 0px;
-            }
-
-            img {
-                margin: 0px;
-            }
-        }
-
-        @media screen and (min-width: 769px) and (max-width: 1200px) {
-            .wrapper {
-                margin: 10px 200px;
-                padding: 10px;
-            }
-
-            .wrapper > a {
-                margin: 10px 0px;
-                color: black;
-                text-decoration: underline;
-            }
-
-            input#email {
-                width: 250px;
-            }
-
-            input#senha {
-                width: 250px;
-            }
-
-            .btn-submit {
-                padding: 10px 110px;
-                border-radius: 0px;
-            }
-
-            img {
-                margin: 0px;
-            }
+            margin: 5px 20px;
+            color: black;
+            font-size: 14px;
         }
     </style>
 </head>
@@ -146,18 +108,22 @@
 
     <h1>Login</h1>
 
-    <div class="wrapper">
-        <img src="logo2.png" alt="Logotipo Linker Digital" />
-        <br>
-        <input type="email" id="email" placeholder="Seu email">
-        <br>
-        <input type="password" id="senha" placeholder="Sua senha">
-        <br>
-        <input type="submit" class="btn-submit" value="Entrar">
-        <p id="sera"></p>
-        <br>
-        <a href="index.html#pay">Ainda não tem conta? Solicite um convite!</a>
-    </div>
+    <section class="container">
+        <div class="wrapper">
+            <img src="logo2.png" alt="Logotipo Linker Digital" />
+            <br>
+            <input type="text" id="userName" placeholder="Usuário">
+            <br>
+            <input type="email" id="email" placeholder="Seu email">
+            <br>
+            <input type="password" id="senha" placeholder="Sua senha">
+            <br>
+            <input type="submit" class="btn-submit" value="Entrar">
+            <p class="sera" id="sera"></p>
+            <br>
+            <a href="index.html#pay">Ainda não tem conta? Solicite um convite!</a>
+        </div>
+    </section>
 
     <script src="login.js"></script>
     

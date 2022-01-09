@@ -64,7 +64,7 @@ img.logo {
 
 div#inicio {
     padding: 10% 0px;
-    background-image: url(imagens/aurora.jpg);
+    background-image: url(aurora.jpg);
     background-attachment: fixed;
     background-repeat: repeat-x;
     justify-content: center;

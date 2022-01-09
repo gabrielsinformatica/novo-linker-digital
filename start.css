@@ -208,3 +208,22 @@ footer {
 .secfooter3 p {
     margin: 10px 0px;
 }
+
+@media screen and (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    .grid {
+        grid-template-columns: auto;
+    }
+
+    form input#nome, form input#email, form input#projeto {
+        padding: 10px;
+        margin: 10px;
+        width: 250px;
+        height: 15px;
+        font-size: 16px; 
+        font-family: "Noto Sans", Arial, sans-serif;
+    }
+}
